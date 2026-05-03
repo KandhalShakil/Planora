@@ -5,51 +5,51 @@
 <br/>
 
 <a href="#">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=22&duration=4000&pause=1200&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=50&lines=Optimistic+UI+%E2%80%A2+Client-Side+Filtering+%E2%80%A2+Zero+Reload+UX" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=22&duration=4000&pause=1200&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=50&lines=%E2%9A%A1+Optimistic+UI+%E2%80%A2+%F0%9F%94%8D+Client-Side+Filtering+%E2%80%A2+%F0%9F%94%84+Zero+Reload+UX" alt="Typing SVG"/>
 </a>
 
 <br/>
 
-![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-4.18-000000?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![JWT](https://img.shields.io/badge/Auth-JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![Vercel](https://img.shields.io/badge/Deploy-Vercel-000?style=flat-square&logo=vercel&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.18-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-D63AFF?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-2EA043?style=for-the-badge)
 
 </div>
 
 ---
 
-## Product Overview
+## 🚀 Product Overview
 
 Planora is a full-stack task management system engineered for speed and reliability. It is not a to-do list — it is a structured workflow tool where every interaction is instant, every mutation is optimistic, and the UI never waits for the server.
 
-**The core philosophy:** fetch all data once, then operate entirely client-side. Filtering, sorting, searching, and pagination happen in-memory with zero additional API calls. Server mutations (create, update, delete) render immediately through optimistic updates, with automatic rollback on failure.
+💡 **The core philosophy:** fetch all data once, then operate entirely client-side. Filtering, sorting, searching, and pagination happen in-memory with zero additional API calls. Server mutations (create, update, delete) render immediately through optimistic updates, with automatic rollback on failure.
 
-**Built for:** individuals and small teams who need a fast, self-hosted task system without the overhead of enterprise platforms like Jira or Asana.
-
----
-
-## Key Features
-
-**Optimistic CRUD operations** — Every create, update, and delete reflects in the UI instantly. The client writes to local state first, renders the change, then reconciles with the server asynchronously. If the API call fails, the mutation is reverted and the user is notified. No spinners, no blocking.
-
-**Client-side filter engine** — On page load, the full task set is fetched once and cached in memory. All subsequent filtering (status, priority), searching (title + description), and sorting (date, priority, alphabetical) operate against this local cache. Result: sub-millisecond filter response times.
-
-**Local pagination** — Tasks are paginated client-side with a configurable page size (default: 6). The pagination component renders dynamically with ellipsis compression for large page counts. No server round-trips on page change.
-
-**Surgical DOM updates** — Toggling task completion does not re-render the entire list. The `applyCardState` function patches only the affected card's classes, icons, and text — avoiding unnecessary reflows.
-
-**Soft delete** — Tasks are never permanently removed from the database on the first pass. The `isDeleted` flag allows for future recovery features without data loss.
-
-**JWT authentication** — Stateless token-based auth with `bcryptjs` password hashing (10-round salt). Tokens are issued on login/register and validated via a `protect` middleware wrapper on every API handler.
-
-**Responsive sidebar layout** — Collapsible sidebar with overlay for mobile viewports (≤1024px). Desktop shows the sidebar persistently; mobile uses a slide-in panel with backdrop dismiss.
+🎯 **Built for:** individuals and small teams who need a fast, self-hosted task system without the overhead of enterprise platforms like Jira or Asana.
 
 ---
 
-## Live Demo
+## ✨ Key Features
+
+⚡ **Optimistic CRUD operations** — Every create, update, and delete reflects in the UI instantly. The client writes to local state first, renders the change, then reconciles with the server asynchronously. If the API call fails, the mutation is reverted and the user is notified. No spinners, no blocking.
+
+🔍 **Client-side filter engine** — On page load, the full task set is fetched once and cached in memory. All subsequent filtering (status, priority), searching (title + description), and sorting (date, priority, alphabetical) operate against this local cache. Result: sub-millisecond filter response times.
+
+📄 **Local pagination** — Tasks are paginated client-side with a configurable page size (default: 6). The pagination component renders dynamically with ellipsis compression for large page counts. No server round-trips on page change.
+
+🎯 **Surgical DOM updates** — Toggling task completion does not re-render the entire list. The `applyCardState` function patches only the affected card's classes, icons, and text — avoiding unnecessary reflows.
+
+🗑️ **Soft delete** — Tasks are never permanently removed from the database on the first pass. The `isDeleted` flag allows for future recovery features without data loss.
+
+🔐 **JWT authentication** — Stateless token-based auth with `bcryptjs` password hashing (10-round salt). Tokens are issued on login/register and validated via a `protect` middleware wrapper on every API handler.
+
+📱 **Responsive sidebar layout** — Collapsible sidebar with overlay for mobile viewports (≤1024px). Desktop shows the sidebar persistently; mobile uses a slide-in panel with backdrop dismiss.
+
+---
+
+## 🎥 Live Demo
 
 <div align="center">
 
@@ -57,7 +57,7 @@ Planora is a full-stack task management system engineered for speed and reliabil
 
 <br/><br/>
 
-| Authentication | Task Creation |
+| 🔑 Authentication | ➕ Task Creation |
 |:---:|:---:|
 | <img src="./assets/login.png" alt="Login" width="400"/> | <img src="./assets/modal.png" alt="Task Modal" width="400"/> |
 
@@ -65,7 +65,7 @@ Planora is a full-stack task management system engineered for speed and reliabil
 
 ---
 
-## System Architecture
+## 🧠 System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -108,7 +108,7 @@ Planora is a full-stack task management system engineered for speed and reliabil
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**Data flow on task creation (optimistic):**
+**🔄 Data flow on task creation (optimistic):**
 
 ```
 User submits form
@@ -122,7 +122,7 @@ User submits form
 
 ---
 
-## Performance & Optimization
+## ⚡ Performance & Optimization
 
 | Technique | Implementation | Impact |
 |-----------|---------------|--------|
@@ -136,31 +136,31 @@ User submits form
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology | Role |
 |-------|-----------|------|
-| **Frontend** | Vanilla JS, HTML5, CSS3 | SPA with no build step — ships raw to the browser |
-| **Backend** | Node.js, Express 4.18 | REST API with handler-based routing |
-| **Database** | MongoDB Atlas (Mongoose 8.1) | Document store with schema validation |
-| **Auth** | JWT (`jsonwebtoken`), `bcryptjs` | Stateless authentication, salted password hashing |
-| **Deployment** | Vercel (serverless) + local Express fallback | Production deployment with zero-config CI |
-| **Icons** | Font Awesome 6.4 | UI iconography |
+| 🖥️ **Frontend** | Vanilla JS, HTML5, CSS3 | SPA with no build step — ships raw to the browser |
+| ⚙️ **Backend** | Node.js, Express 4.18 | REST API with handler-based routing |
+| 🗄️ **Database** | MongoDB Atlas (Mongoose 8.1) | Document store with schema validation |
+| 🔑 **Auth** | JWT (`jsonwebtoken`), `bcryptjs` | Stateless authentication, salted password hashing |
+| 🚀 **Deployment** | Vercel (serverless) + local Express fallback | Production deployment with zero-config CI |
+| 🎨 **Icons** | Font Awesome 6.4 | UI iconography |
 
 ---
 
-## Security
+## 🔐 Security
 
-- **Password storage** — Passwords are hashed with `bcryptjs` using a 10-round salt. Raw passwords are never stored or logged. The `password` field is excluded from queries by default (`select: false`).
-- **Token-based auth** — JWTs are issued on login/register and required for all `/api/tasks` endpoints. The `protect()` middleware extracts the token from the `Authorization: Bearer` header, verifies it against `JWT_SECRET`, and attaches the resolved user to `req.user`.
-- **Ownership isolation** — Every task query is scoped to `{ user: req.user._id }`. Users cannot read, modify, or delete tasks belonging to other accounts.
-- **Input validation** — Mongoose schema enforces required fields, max lengths (title: 200 chars), enum constraints (priority: `low | medium | high`), and email format via regex. Malformed requests return 400 with a descriptive message.
-- **XSS prevention** — All user-generated content (title, description) is escaped via `escapeHtml()` before DOM insertion.
-- **Auto-logout** — 401 responses from the API automatically clear `localStorage` and redirect to the login page.
+- 🔒 **Password storage** — Passwords are hashed with `bcryptjs` using a 10-round salt. Raw passwords are never stored or logged. The `password` field is excluded from queries by default (`select: false`).
+- 🎟️ **Token-based auth** — JWTs are issued on login/register and required for all `/api/tasks` endpoints. The `protect()` middleware extracts the token from the `Authorization: Bearer` header, verifies it against `JWT_SECRET`, and attaches the resolved user to `req.user`.
+- 🛡️ **Ownership isolation** — Every task query is scoped to `{ user: req.user._id }`. Users cannot read, modify, or delete tasks belonging to other accounts.
+- ✅ **Input validation** — Mongoose schema enforces required fields, max lengths (title: 200 chars), enum constraints (priority: `low | medium | high`), and email format via regex. Malformed requests return 400 with a descriptive message.
+- 🧹 **XSS prevention** — All user-generated content (title, description) is escaped via `escapeHtml()` before DOM insertion.
+- 🚪 **Auto-logout** — 401 responses from the API automatically clear `localStorage` and redirect to the login page.
 
 ---
 
-## Installation
+## 📦 Installation
 
 **Prerequisites:** Node.js 18+, a MongoDB Atlas cluster (or local MongoDB instance).
 
@@ -189,7 +189,7 @@ The project includes a `vercel.json` with pre-configured routing. Push to a GitH
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 ├── server.js                 # Express entry point, route registration
@@ -226,7 +226,7 @@ The project includes a `vercel.json` with pre-configured routing. Push to a GitH
 
 ---
 
-## API Reference
+## 📡 API Reference
 
 | Method | Endpoint | Auth | Description |
 |--------|----------|------|-------------|
@@ -242,25 +242,25 @@ All responses follow the shape `{ success: boolean, data?: object, message?: str
 
 ---
 
-## Roadmap
+## 📈 Roadmap
 
-- [ ] WebSocket layer for multi-client real-time sync
-- [ ] Role-based access control (workspace owner, member, viewer)
-- [ ] Email notifications for approaching deadlines
-- [ ] Drag-and-drop task reordering with persisted sort order
-- [ ] Dark/light theme toggle with CSS variable system
-- [ ] Task labels and tag-based grouping
-- [ ] Mobile-native companion (React Native)
+- [ ] 🔌 WebSocket layer for multi-client real-time sync
+- [ ] 👥 Role-based access control (workspace owner, member, viewer)
+- [ ] 📧 Email notifications for approaching deadlines
+- [ ] 🖱️ Drag-and-drop task reordering with persisted sort order
+- [ ] 🌙 Dark/light theme toggle with CSS variable system
+- [ ] 🏷️ Task labels and tag-based grouping
+- [ ] 📱 Mobile-native companion (React Native)
 
 ---
 
-## Author
+## 👤 Author
 
 **Kandhal Shakil** — [GitHub](https://github.com/KandhalShakil) · [LinkedIn](https://linkedin.com/in/kandhalshakil)
 
 ---
 
-## License
+## 📜 License
 
 Released under the [MIT License](LICENSE). Copyright © 2026 Kandhal Shakil.
 
