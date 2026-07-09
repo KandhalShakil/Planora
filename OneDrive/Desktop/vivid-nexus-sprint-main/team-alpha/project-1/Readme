@@ -1,0 +1,40 @@
+
+# Catery ☕
+
+A single-page cafe website — "Savor the Pause, Love the Brew."
+
+## Tech Stack
+
+- TanStack Start / Router
+- React + TypeScript
+- Tailwind CSS
+
+## Features
+
+- Sticky header with smooth-scroll navigation (Home, Specials, Menu, About)
+- Hero section with animated SVG coffee cup illustration
+- Daily specials highlight
+- Product menu carousel (click → to cycle items)
+- About Us section with two cafe locations
+- Contact modal (popup form) triggered from header, hero, and footer
+- Fully responsive (mobile menu included)
+- No external images — all visuals are custom inline SVG
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open the app in your browser at the local dev URL shown in the terminal.
+
+## Project Structure
+
+- `routes/index.tsx` — main Catery landing page
+- `routes/__root.tsx` — root layout, meta tags, error/404 handling
+- `styles.css` — global styles
+
+## Notes
+
+All colors, fonts, and icons are self-contained in `index.tsx` — no external image or icon library required.
